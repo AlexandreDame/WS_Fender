@@ -1,0 +1,165 @@
+﻿body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    padding:0 20px;
+    margin:0;
+}
+
+a{text-decoration:none;color:#ef382a;}
+
+header{text-align:center;margin-bottom:15px;}
+    header nav {
+        background-image: linear-gradient(to bottom,#3c3c3c 0,#222 100%);
+        border-radius:4px;
+        text-align:left;
+        border:1px solid #101010;
+    }
+        header nav ul{
+            margin:0;
+            padding-left:0;
+        }
+            header nav li{
+                display:inline-block;
+               }
+                header nav li a {
+                    padding: 15px 20px;
+                    display: block;
+                    color: #9d9d9d;
+                }
+                header nav li a.active{
+                    background-color:#101010;
+                    color:#fff;
+                }
+                header nav li a:hover{
+                    color:#fff;
+                }
+header img{
+    height:100px;
+    border-radius:4px;
+    margin-top:20px;
+}
+
+
+div.div_social {
+    background-color:#000;/*#ef382a*/
+    text-align:center;
+    color:#fff;
+    padding:10px;
+}
+.ln_facebook{background:url('../img/picto-fb.png') no-repeat;width:12px;height:12px;display:inline-block;margin:0 5px;padding:0 4px;border-right:1px solid #fff;}
+.ln_twitter{background:url('../img/picto-tw.png') no-repeat;width:12px;height:12px;display:inline-block;margin:0 5px;padding:0 5px}
+
+#article1 {
+    background-image:url(../img/fender.jpg);
+    background-position:right bottom;
+    background-repeat:no-repeat;
+    background-size:contain;
+    border:1px solid #000;
+    height:560px;
+    padding-left:50%;
+    padding-right:40px;
+}
+#article1 h1{font-size:36px;margin:20px 0 4px 0;font-weight:normal;}
+#article1 h2{font-size:30px;margin-top:10px;margin-bottom:0px;font-weight:normal;}
+#article1 p{text-align:justify;margin-top:0px;}
+
+#div_coordonnees {
+    margin-top:40px;
+    display:flex;
+}
+#div_coordonnees div h3{margin-top:0px;font-size:24px;font-weight:normal;}
+#div_adresse {
+    flex:1;
+    padding-left:140px;
+    background:url('../img/logo_fender.png') no-repeat;
+    background-size:100px;
+}
+#div_contact {
+    margin-left:60px;
+    margin-right:60px;
+    flex:1;
+}
+#div_presse {
+    flex:1;
+}
+#div_credits {
+    border-top:1px solid #ccc;
+    text-align:center;
+    margin:auto;
+    margin-top:30px;
+    width:80%;
+    padding-top:15px;
+}
+
+@media screen and (max-width:1000px){
+    #article1{padding-left:40%;}
+}
+
+@media screen and (max-width:750px){
+    #article1{padding-left:20px;padding-right:20px;}
+    #div_coordonnees{
+        flex-direction:column;
+    }
+    #div_contact,#div_presse{
+        padding-left:140px;
+        margin-left:0px;
+        margin-top:15px;
+    }
+}
+
+/*
+    Partie bloc infos fixe en haut à gauche
+*/
+#infos {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    height: 150px;
+    overflow: hidden;
+    margin-left: -355px;
+    transition: margin-left 2s;
+}
+
+    #infos > div {
+        display: inline-block;
+        width: 350px;
+        height: 150px;
+        background-color: #000;
+        color: #fff;
+        padding-right: 5px;
+    }
+
+    #infos h3 {
+        font-size: 14px;
+    }
+
+    #infos img {
+        float: left;
+        height: 150px;
+        margin-right: 5px;
+    }
+
+    #infos a {
+        background-color: #ef382a;
+        color: #fff;
+        padding: 5px;
+        display: inline-block;
+        transform: rotate(-90deg);
+        margin-left: -70px;
+        margin-top: 60px;
+        width: 150px;
+        text-align: center;
+        vertical-align: top;
+        text-decoration: none;
+    }
+
+    #infos:hover {
+        transition: margin-left 1s;
+        margin-left: 0px;
+    }
+.plus {
+    font-weight: bold;
+    font-size: 24px;
+    vertical-align: sub;
+    font-family: arial;
+}
